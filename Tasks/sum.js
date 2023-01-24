@@ -6,12 +6,12 @@
 'use strict';
 
 const sum = (array) => {
-  let sum = 0;
+  let res = 0;
   const condition = (element) => {
-    if (typeof element === 'number') sum += element;
+    if (typeof element === 'number') res += element;
   };
   array.map(condition);
-  return sum;
+  return res;
 };
 
 require('../Tests/sum.js')(sum);
