@@ -5,9 +5,7 @@
 
 'use strict';
 
-const filter = (array, type) => {
-  const filtered = array.filter((element) => typeof element === type);
-  return filtered;
-};
+const filter = (array, type) => array
+  .filter((element) => typeof element === type);
 
 require('../Tests/filter.js')(filter);
